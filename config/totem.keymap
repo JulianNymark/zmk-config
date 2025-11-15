@@ -58,7 +58,7 @@
               &kp SINGLE_QUOTE  &kp COMMA   &kp PERIOD     &kp P         &kp Y        &kp F    &kp G        &kp C        &kp R       &kp L
               &hm LGUI A        &hm LALT O  &hm LCTRL E    &hm LSHIFT U  &kp I        &kp D    &hm RSHFT H  &hm RCTRL T  &hm RALT N  &hm RGUI S
 &lt 3 ESCAPE  &kp SEMICOLON     &kp Q       &kp J          &kp K         &kp X        &kp B    &kp M        &kp W        &kp V       &kp Z       &kp MINUS
-                                            &mt LCTRL DEL  &lt 1 TAB     &kp SPACE    &kp RET  &lt 2 BSPC   &kp MINUS
+                                            &mt LCTRL DEL  &lt 1 TAB     &kp SPACE    &kp RET  &lt 2 BSPC   &kp C
             >;
         };
 
