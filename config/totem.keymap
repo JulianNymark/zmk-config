@@ -71,7 +71,19 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <16 17 18>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 12 13>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -79,30 +91,30 @@
         Base {
             display-name = "Base";
             bindings = <
-              &kp SINGLE_QUOTE  &kp COMMA     &kp PERIOD     &kp P           &kp Y        &kp F    &kp G          &kp C          &kp R         &kp L
-              &hm_l LGUI A      &hm_l LALT O  &hm_l LCTRL E  &hm_l LSHIFT U  &kp I        &kp D    &hm_r RSHFT H  &hm_r RCTRL T  &hm_r RALT N  &hm_r RGUI S
-&lt 3 ESCAPE  &kp SEMICOLON     &kp Q         &kp J          &kp K           &kp X        &kp B    &kp M          &kp W          &kp V         &kp Z         &mt RIGHT_ALT MINUS
-                                              &kp DELETE     &lt 1 TAB       &kp SPACE    &kp RET  &lt 2 BSPC     &none
+              &kp SINGLE_QUOTE  &kp COMMA     &kp PERIOD     &kp P           &kp Y        &kp F          &kp G          &kp C          &kp R         &kp L
+              &hm_l LGUI A      &hm_l LALT O  &hm_l LCTRL E  &hm_l LSHIFT U  &kp I        &kp D          &hm_r RSHFT H  &hm_r RCTRL T  &hm_r RALT N  &hm_r RGUI S
+&lt 3 ESCAPE  &kp SEMICOLON     &kp Q         &kp J          &kp K           &kp X        &kp B          &kp M          &kp W          &kp V         &kp Z         &kp MINUS
+                                              &kp DELETE     &mo 1           &kp SPACE    &kp BACKSPACE  &mo 2          &none
             >;
         };
 
         Nav {
             display-name = "Nav";
             bindings = <
-              &kp TILDE       &trans     &kp UP_ARROW  &trans     &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-              &kp LEFT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp LEFT_ALT  &kp LEFT_WIN    &kp MINUS  &trans        &kp PLUS   &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp PLUS
-                                         &trans        &trans     &trans      &trans    &trans        &kp DOT
+              &kp TILDE       &kp PG_UP  &kp UP_ARROW  &kp PAGE_DOWN  &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+              &kp LEFT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT      &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&kp LEFT_ALT  &kp LEFT_WIN    &kp HOME   &trans        &kp END        &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp PLUS
+                                         &trans        &trans         &trans      &trans    &trans        &kp DOT
             >;
         };
 
         Sym {
             display-name = "Sym";
             bindings = <
-                &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT  &kp DQT
-                &trans    &trans  &trans    &trans      &trans         &trans     &trans         &trans           &trans   &trans
-&studio_unlock  &trans    &trans  &trans    &trans      &trans         &kp UNDER  &kp EQUAL      &trans           &trans   &kp SLASH  &kp HOME
-                                  &trans    &trans      &trans         &trans     &trans         &trans
+        &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT  &kp DQT
+        &trans    &trans  &trans    &trans      &kp EQUAL      &trans     &trans         &trans           &trans   &trans
+&trans  &trans    &trans  &trans    &trans      &kp SLASH      &trans     &trans         &trans           &trans   &trans   &trans
+                          &trans    &trans      &trans         &trans     &trans         &trans
             >;
         };
 
