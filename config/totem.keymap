@@ -45,6 +45,30 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+
+        hm_l: hm_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_L";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <5 15 26 35 36 6 7 8 9 16 17 18 19 27 28 29 30 31 37>;
+        };
+
+        hm_r: hm_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_R";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -55,10 +79,10 @@
         Base {
             display-name = "Base";
             bindings = <
-              &kp SINGLE_QUOTE  &kp COMMA   &kp PERIOD     &kp P         &kp Y        &kp F    &kp G        &kp C        &kp R       &kp L
-              &hm LGUI A        &hm LALT O  &hm LCTRL E    &hm LSHIFT U  &kp I        &kp D    &hm RSHFT H  &hm RCTRL T  &hm RALT N  &hm RGUI S
-&lt 3 ESCAPE  &kp SEMICOLON     &kp Q       &kp J          &kp K         &kp X        &kp B    &kp M        &kp W        &kp V       &kp Z       &kp MINUS
-                                            &mt LCTRL DEL  &lt 1 TAB     &kp SPACE    &kp RET  &lt 2 BSPC   &kp C
+              &kp SINGLE_QUOTE  &kp COMMA     &kp PERIOD     &kp P           &kp Y        &kp F    &kp G          &kp C          &kp R         &kp L
+              &hm_l LGUI A      &hm_l LALT O  &hm_l LCTRL E  &hm_l LSHIFT U  &kp I        &kp D    &hm_r RSHFT H  &hm_r RCTRL T  &hm_r RALT N  &hm_r RGUI S
+&lt 3 ESCAPE  &kp SEMICOLON     &kp Q         &kp J          &kp K           &kp X        &kp B    &kp M          &kp W          &kp V         &kp Z         &mt RIGHT_ALT MINUS
+                                              &kp DELETE     &lt 1 TAB       &kp SPACE    &kp RET  &lt 2 BSPC     &none
             >;
         };
 
