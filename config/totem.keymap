@@ -101,10 +101,10 @@
         Nav {
             display-name = "Nav";
             bindings = <
-              &kp GRAVE       &kp PG_UP  &kp UP_ARROW  &kp PAGE_DOWN  &kp QMARK    &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-              &kp LEFT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT      &kp SLASH    &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACKET
-&kp LEFT_ALT  &kp LEFT_WIN    &kp HOME   &trans        &kp END        &kp LPAR     &kp RPAR   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY   &kp RBRC
-                                         &trans        &trans         &trans       &trans     &trans        &kp V
+              &kp GRAVE       &kp PG_UP  &kp UP_ARROW  &kp PAGE_DOWN  &kp DQT             &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+              &kp LEFT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT      &kp SINGLE_QUOTE    &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACKET
+&kp LEFT_ALT  &kp LEFT_WIN    &kp HOME   &trans        &kp END        &kp LPAR            &kp RPAR   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY   &kp RBRC
+                                         &trans        &trans         &trans              &trans     &trans        &kp V
             >;
         };
 
