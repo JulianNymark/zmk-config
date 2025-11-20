@@ -119,40 +119,30 @@
         Sym {
             display-name = "Sym";
             bindings = <
-        &kp EXCL   &kp AT     &kp HASH  &kp DLLR        &kp PRCNT           &kp CARET  &kp AMPS              &kp STAR              &trans             &trans
-        &trans     &trans     &trans    &trans          &kp LEFT_BRACKET    &trans     &trans                &trans                &trans             &trans
-&trans  &kp TILDE  &kp GRAVE  &kp PIPE  &kp LEFT_BRACE  &kp BACKSLASH       &trans     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &mt LG(LS(NUMBER_4)) LG(LS(LC(NUMBER_4)))
-                              &trans    &trans          &trans              &trans     &trans                &trans
+        &kp EXCL   &kp AT     &kp HASH  &kp DLLR        &kp PRCNT           &kp CARET  &kp AMPS  &kp STAR  &trans  &trans
+        &trans     &trans     &trans    &trans          &kp LEFT_BRACKET    &trans     &trans    &trans    &trans  &trans
+&trans  &kp TILDE  &kp GRAVE  &kp PIPE  &kp LEFT_BRACE  &kp BACKSLASH       &trans     &trans    &trans    &trans  &trans  &trans
+                              &trans    &trans          &trans              &trans     &trans    &trans
             >;
         };
 
         Fun {
             display-name = "Fun";
             bindings = <
-        &trans  &trans  &trans  &trans  &to 4     &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &mt LG(LS(NUMBER_4)) LG(LC(LS(NUMBER_4)))  &trans  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
+        &trans                                     &trans  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans                                     &trans  &trans                &trans                &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                                           &trans                &trans                &trans    &trans  &trans  &trans
             >;
         };
 
         Gaming {
             display-name = "Game";
             bindings = <
-            &kp Z           &kp X  &kp C      &kp V         &sl 5     &trans  &trans  &trans  &trans  &trans
+            &kp Z           &kp X  &kp C      &kp V         &trans    &trans  &trans  &trans  &trans  &trans
             &kp TAB         &kp Q  &kp W      &kp E         &kp R     &trans  &trans  &trans  &trans  &trans
 &kp ESCAPE  &kp LEFT_SHIFT  &kp A  &kp S      &kp D         &kp F     &trans  &trans  &trans  &trans  &trans  &trans
                                    &kp LCTRL  &kp LEFT_ALT  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        Gaming+ {
-            display-name = "Game+";
-            bindings = <
-        &kp F10  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp T     &kp RA(RC(Y))  &kp RA(RC(U))  &trans  &trans  &kp LC(RA(DEL))
-        &kp L    &kp O         &kp Y         &kp K         &kp G     &kp F5         &kp F7         &trans  &trans  &kp F12
-&trans  &to 0    &trans        &trans        &trans        &trans    &trans         &trans         &trans  &trans  &kp F22          &kp LA(F4)
-                               &kp J         &kp I         &kp M     &trans         &trans         &trans
             >;
         };
     };
