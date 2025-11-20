@@ -23,8 +23,7 @@
 &mt {
     quick-tap-ms = <100>;
     global-quick-tap;
-    flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    tapping-term-ms = <150>;
 };
 
 &lt {
@@ -122,7 +121,7 @@
             bindings = <
         &kp EXCL   &kp AT     &kp HASH  &kp DLLR        &kp PRCNT           &kp CARET  &kp AMPS              &kp STAR              &trans             &trans
         &trans     &trans     &trans    &trans          &kp LEFT_BRACKET    &trans     &trans                &trans                &trans             &trans
-&trans  &kp TILDE  &kp GRAVE  &kp PIPE  &kp LEFT_BRACE  &kp BACKSLASH       &trans     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
+&trans  &kp TILDE  &kp GRAVE  &kp PIPE  &kp LEFT_BRACE  &kp BACKSLASH       &trans     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &mt LG(LS(NUMBER_4)) LG(LS(LC(NUMBER_4)))
                               &trans    &trans          &trans              &trans     &trans                &trans
             >;
         };
