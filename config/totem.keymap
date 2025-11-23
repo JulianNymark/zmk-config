@@ -104,7 +104,7 @@
             bindings = <
         &kp LC(LS(TAB))  &kp PG_UP  &kp UP_ARROW  &kp PAGE_DOWN  &kp UNDER    &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
         &kp LC(TAB)      &kp LEFT   &kp DOWN      &kp RIGHT      &kp MINUS    &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp APOS
-&trans  &trans           &kp HOME   &trans        &kp END        &kp LPAR     &kp RPAR   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp RBRC
+&trans  &kp LG(GRAVE)    &kp HOME   &trans        &kp END        &kp LPAR     &kp RPAR   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp RBRC
                                     &trans        &trans         &trans       &trans     &trans        &kp E
             >;
         };
