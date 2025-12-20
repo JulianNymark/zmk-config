@@ -7,7 +7,7 @@ EXTRA_ARGS=${@:3}
 ZMK_CONFIG="/workspace/config"
 
 # Ensure the build directory exists
-mkdir -p build
+mkdir -p "build/$SHIELD"
 
 echo "Building $SHIELD for $BOARD..."
 
@@ -34,10 +34,10 @@ docker run --rm \
     
     cd zmk/app
     # Pass Zephyr_DIR to help find_package(Zephyr) without symlinks
-    west build -p always -b $BOARD -d /workspace/build -- -DSHIELD=$SHIELD -DZMK_CONFIG=\"$ZMK_CONFIG\" -DZephyr_DIR=/workspace/zephyr/share/zephyr-package/cmake $EXTRA_ARGS
+    west build -p always -b $BOARD -d /workspace/build/$SHIELD -- -DSHIELD=$SHIELD -DZMK_CONFIG=\"$ZMK_CONFIG\" -DZephyr_DIR=/workspace/zephyr/share/zephyr-package/cmake $EXTRA_ARGS
     
-    if [ -f /workspace/build/zephyr/zmk.uf2 ]; then
-      cp /workspace/build/zephyr/zmk.uf2 /workspace/${SHIELD}-${BOARD}.uf2
+    if [ -f /workspace/build/$SHIELD/zephyr/zmk.uf2 ]; then
+      cp /workspace/build/$SHIELD/zephyr/zmk.uf2 /workspace/${SHIELD}-${BOARD}.uf2
     else
       echo 'Error: Build failed, no .uf2 file generated.'
       exit 1
