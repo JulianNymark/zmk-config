@@ -75,6 +75,11 @@
             bindings = <&kp TAB>;
             key-positions = <11 12 13>;
         };
+
+        shift_tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <11 12 14>;
+        };
     };
 
     macros {
@@ -122,10 +127,10 @@
         Fun {
             display-name = "Fun";
             bindings = <
-        &mt LG(LS(NUMBER_4)) LG(LC(LS(NUMBER_4)))  &trans                &trans           &trans           &trans               &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &mt LA(LS(C_VOLUME_UP)) C_VOLUME_UP        &kp C_BRIGHTNESS_INC  &kp LC(TAB)      &kp LG(TAB)      &kp LG(GRAVE)        &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &mt LA(LS(C_VOLUME_DOWN)) C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &kp LC(LS(TAB))  &kp LG(LS(TAB))  &kp LG(LS(GRAVE))    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                                                         &trans           &trans           &trans               &trans  &trans  &trans
+        &mt LG(LS(NUMBER_4)) LG(LC(LS(NUMBER_4)))  &trans                &trans           &trans             &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
+        &mt LA(LS(C_VOLUME_UP)) C_VOLUME_UP        &kp C_BRIGHTNESS_INC  &kp LC(TAB)      &kp LG(GRAVE)      &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &mt LA(LS(C_VOLUME_DOWN)) C_VOLUME_DOWN    &kp C_BRIGHTNESS_DEC  &kp LC(LS(TAB))  &kp LG(LS(GRAVE))  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                                                         &trans           &trans             &trans    &trans  &trans  &trans
             >;
         };
 
