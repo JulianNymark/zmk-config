@@ -1,0 +1,8 @@
+# ZMK local build artifacts
+.west/
+zmk/
+zephyr/
+modules/
+optional/
+build/
+*.uf2
